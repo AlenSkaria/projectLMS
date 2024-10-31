@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <button class="goback" onclick="goBackToHomePage()">goback</button>
+      <div class="login">
+        <h1 class="welcome">Login!</h1>
+        <form onsubmit="login()">
+          <input type="text" name="username" id="USR" placeholder="User Name" />
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          you are not a user?
+          <a href="" id="toggleTrigger" onclick="toggleLoginSignup()"
+            >sign in now</a
+          >
+        </p>
+      </div>
+
+      <!-- signup -->
+      <div class="signup hide">
+        <h1 class="welcome">Signup!</h1>
+        <form onsubmit="login()">
+          <input type="text" name="username" id="USR" placeholder="User Name" />
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+          />
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+          />
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+          />
+          <input
+            type="password"
+            name="password"
+            id="PWD"
+            placeholder="Password"
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          you are not a user?
+          <a href="" id="toggleTrigger" onclick="toggleLoginSignup()"
+            >sign in now</a
+          >
+        </p>
+      </div>
+    </div>
+    <p
+      class="warning"
+      style="
+        position: fixed;
+        z-index: 2;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff0000;
+        padding: 0.8rem 1.5rem;
+        color: #fff;
+        border-radius: 12px;
+        display: none;
+        font-size: 0.7rem;
+      "
+    ></p>
+
+    <!-- //script -->
+    <script src="../js/login.js"></script>
+  </body>
+</html>

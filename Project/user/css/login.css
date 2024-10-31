@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+input {
+  padding: 0.8rem 1rem;
+  width: 12rem;
+}
+button {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 12rem;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 12px;
+}
+button:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login h1 {
+  margin: 1rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup h1 {
+  margin: 1rem;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hide {
+  display: none;
+}
