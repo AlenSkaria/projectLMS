@@ -1,0 +1,59 @@
+* {
+  /* padding: 0 !important; */
+  /* margin: 0 !important; */
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+}
+
+/* navcss maybe make it global */
+
+.logo p {
+  margin: 0;
+}
+.nav {
+  padding: 1.5rem 0;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+.nav_internal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks a {
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  color: black;
+  background-color: #ffffff08;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+.navlinks a:hover {
+  color: #fff !important;
+  background-color: #111;
+}
+
+/* navcss maybe make it global */
+
+.main_container {
+  /* border: 1px solid red; */
+  margin-top: 5rem;
+}
+.selectedBookMainDetails {
+  display: flex;
+}
+img {
+  width: 15rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+}

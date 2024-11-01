@@ -3,28 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login/signup</title>
     <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <div class="main">
-      <button class="goback" onclick="goBackToHomePage()">goback</button>
+      <p class="goback" onclick="goBackToHomePage()">
+        <img src="../../assets/back.png" alt="" />
+      </p>
       <div class="login">
         <h1 class="welcome">Login!</h1>
-        <form onsubmit="login()">
-          <input type="text" name="username" id="USR" placeholder="User Name" />
+        <form onsubmit="loginUser()">
+          <input type="text" name="username" id="loginusername" placeholder="User Name" />
           <input
             type="password"
             name="password"
-            id="PWD"
+            id="loginpassword"
             placeholder="Password"
           />
           <button type="submit">Login</button>
         </form>
-        <p>
-          you are not a user?
+        <p class="toggle_text">
+          new user?
           <a href="" id="toggleTrigger" onclick="toggleLoginSignup()"
-            >sign in now</a
+            >create account</a
           >
         </p>
       </div>
@@ -32,39 +34,55 @@
       <!-- signup -->
       <div class="signup hide">
         <h1 class="welcome">Signup!</h1>
-        <form onsubmit="login()">
-          <input type="text" name="username" id="USR" placeholder="User Name" />
+        <form onsubmit="createUser()">
           <input
-            type="password"
-            name="password"
-            id="PWD"
-            placeholder="Password"
+            type="text"
+            name="firstname"
+            id="fname"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lname"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            required
+          />
+          <input
+            type="text"
+            name="username"
+            id="signinusername"
+            placeholder="User Name"
+            required
           />
           <input
             type="password"
             name="password"
-            id="PWD"
+            id="signinpassword"
             placeholder="Password"
+            required
           />
-          <input
-            type="password"
-            name="password"
-            id="PWD"
-            placeholder="Password"
-          />
-          <input
-            type="password"
-            name="password"
-            id="PWD"
-            placeholder="Password"
-          />
-          <button type="submit">Login</button>
+
+          <button type="submit">signin</button>
         </form>
-        <p>
-          you are not a user?
-          <a href="" id="toggleTrigger" onclick="toggleLoginSignup()"
-            >sign in now</a
-          >
+        <p class="toggle_text">
+          already a customer?
+          <a href="" id="toggleTrigger" onclick="toggleLoginSignup()">Login</a>
         </p>
       </div>
     </div>

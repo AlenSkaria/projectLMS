@@ -66,3 +66,29 @@ button:hover {
 .hide {
   display: none;
 }
+
+.goback {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.148);
+  cursor: pointer;
+}
+.goback img {
+  width: 1rem;
+}
+.toggle_text {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+.toggle_text a {
+  color: #ff0000;
+}
