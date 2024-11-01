@@ -28,7 +28,7 @@ const booksData = [
     price: 12.0,
     rentPrice: 4.0,
     coverImage:
-      "https://images.unsplash.com/photo-1553484771-62772929b8f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1721332155545-c7a8005a2581?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
     pages: [
@@ -48,7 +48,7 @@ const booksData = [
     price: 14.0,
     rentPrice: 5.0,
     coverImage:
-      "https://images.unsplash.com/photo-1511639110077-0b17bb5b276d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1726711340790-ccaa3ae7e0c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A chilling prophecy about the future, 1984 is a dystopian novel set in a totalitarian society ruled by Big Brother.",
     pages: [
@@ -68,7 +68,7 @@ const booksData = [
     price: 10.0,
     rentPrice: 3.0,
     coverImage:
-      "https://images.unsplash.com/photo-1546724345-3c15044b04f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1729974354513-758c8a5d196d?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A romantic novel of manners that depicts the British landed gentry at the end of the 18th century.",
     pages: [
@@ -88,7 +88,7 @@ const booksData = [
     price: 11.0,
     rentPrice: 4.0,
     coverImage:
-      "https://images.unsplash.com/photo-1584701884674-091d6ee449d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1679940852180-09a0a4e775c0?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A novel about teenage angst and alienation, it explores complex themes of identity, belonging, and loss.",
     pages: [
@@ -108,7 +108,7 @@ const booksData = [
     price: 13.0,
     rentPrice: 4.5,
     coverImage:
-      "https://images.unsplash.com/photo-1595541137631-441cfcb1a322?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1636307777503-31a94556968c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A fantasy novel about the journey of a hobbit named Bilbo Baggins who embarks on an adventure to help a group of dwarves.",
     pages: [

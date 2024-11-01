@@ -40,8 +40,8 @@ let usersAuthData = {
     },
     {
       userId: 3,
-      username: "adminUser",
-      password: "adminpassword",
+      username: "admins",
+      password: "13",
       role: "admin",
       adminDetails: {
         adminCode: "ADMIN2024",

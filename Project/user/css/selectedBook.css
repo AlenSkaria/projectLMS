@@ -1,52 +1,15 @@
-* {
-  /* padding: 0 !important; */
-  /* margin: 0 !important; */
-  box-sizing: border-box;
-}
-body {
-  font-family: poppins;
-}
-
-/* navcss maybe make it global */
-
-.logo p {
-  margin: 0;
-}
-.nav {
-  padding: 1.5rem 0;
-  background-color: #fff;
-  position: -webkit-sticky;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  top: 0;
-}
-.nav_internal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navlinks a {
-  text-decoration: none;
-  padding: 0.5rem 0.9rem;
-  color: black;
-  background-color: #ffffff08;
-  border-radius: 12px;
-  font-size: 0.9rem;
-}
-.navlinks a:hover {
-  color: #fff !important;
-  background-color: #111;
-}
-
-/* navcss maybe make it global */
-
 .main_container {
   /* border: 1px solid red; */
   margin-top: 5rem;
 }
 .selectedBookMainDetails {
   display: flex;
+  /* justify-content: center; */
+  gap: 1rem;
+  /* border: 1px solid #11111180; */
+}
+.selectedBookDetails {
+  width: 40%;
 }
 img {
   width: 15rem;
@@ -56,4 +19,66 @@ img {
 
 .hide {
   display: none;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.individual_card {
+  margin-bottom: 3rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.individual_card:hover {
+  border: 2px solid #e11b23;
+  box-shadow: 1px 2px 15px 0px rgba(224, 224, 224, 0.884);
+}
+.individual_card img {
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#selectedBookTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.book_texts p {
+  font-size: 0.8rem;
+  margin: 0.3rem 0.8rem;
+}
+.book_title {
+  font-weight: 600;
+}
+
+.selectedBookOptions button {
+  padding: 0.5rem 2rem;
+  margin: 1rem 1rem 1rem 0;
+  border: 1px solid #111;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.selectedBookOptions button:hover {
+  color: #fff;
+  background-color: #e11b23;
+}
+
+@media (max-width: 768px) {
+  .selectedBookMainDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    /* border: 1px solid #11111180; */
+  }
+  .selectedBookDetails {
+    width: 90%;
+  }
 }
