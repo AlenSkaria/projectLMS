@@ -79,3 +79,13 @@ body {
 .main {
   margin-top: 6rem;
 }
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px; /* Add some spacing between input and button */
+}
+
+.search-container input {
+  flex: 1; /* Make input take available space */
+}
