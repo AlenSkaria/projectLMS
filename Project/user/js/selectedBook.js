@@ -212,5 +212,8 @@ function openBookDetails(book) {
   window.location.href = "../../user/html/selectedBook.html";
   localStorage.setItem("selectedBook", JSON.stringify(book));
 }
+function goToRead() {
+  window.location.href = "../../user/html/readingInterface.html";
+}
 
 // common for pages

@@ -26,7 +26,7 @@
         <div class="navlinks">
           <a href="../html/dashboard.html" id="btndashboard">Dashboard.</a>
           <a href="./books.html" id="btnbooks">Books.</a>
-          <a href="#" id="btnusers">Users.</a>
+          <a href="./users.html" id="btnusers">Users.</a>
           <a href="#" id="btncatalogue">Catalogue.</a>
           <!-- <a href="#" id="btnlogin" style="color: #e11b23" onclick="goToLogin()"
               >login.</a
@@ -43,28 +43,10 @@
     </div>
     <!-- //navigation section -->
 
-    <div class="display_booklist container">
-      <h2 class="custom_title_global">Manage Books.</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Book id</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="booktabledata">
-          <!-- dynamic -->
-        </tbody>
-      </table>
-    </div>
     <div class="add_books container">
       <button class="add_book_button" onclick="toggle()">Add a book</button>
       <div class="book_form" style="display: none">
-        <form onsubmit="addBook(event)" class="bookonlyform">
+        <form onsubmit="addBookData(event)" class="bookonlyform">
           <input
             type="text"
             name="id"
@@ -95,13 +77,23 @@
             required
           />
           <!-- //change availaleFor to multiselect -->
-          <input
+          <!-- <input
             type="text"
             name="availableFor"
             id="availableFor"
             placeholder="Available For"
             required
-          />
+          /> -->
+          <label>Available For:</label>
+          <div>
+            <label>
+              <input type="checkbox" name="availableFor" value="buy" /> Buy
+            </label>
+            <label>
+              <input type="checkbox" name="availableFor" value="read" /> Read
+            </label>
+          </div>
+
           <input
             type="text"
             name="bookPrice"
@@ -119,6 +111,26 @@
           <button type="submit">Submit</button>
         </form>
       </div>
+    </div>
+
+    <!-- //book list -->
+    <div class="display_booklist container">
+      <h2 class="custom_title_global">Manage Books.</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Book id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="booktabledata">
+          <!-- dynamic -->
+        </tbody>
+      </table>
     </div>
     <script src="../js/books.js"></script>
   </body>

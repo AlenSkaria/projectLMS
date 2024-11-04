@@ -81,6 +81,22 @@
   border: 2px solid #e11b23;
   box-shadow: 1px 2px 15px 0px rgba(224, 224, 224, 0.884);
 }
+.membership_purchased {
+  display: flex;
+  justify-content: center;
+}
+#purchased_membership {
+  border: 1px solid #111;
+  width: fit-content;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+#purchased_membership:hover {
+  border: 2px solid #e11b23;
+  box-shadow: 1px 2px 15px 0px rgba(224, 224, 224, 0.884);
+}
 
 .hide {
   display: none;

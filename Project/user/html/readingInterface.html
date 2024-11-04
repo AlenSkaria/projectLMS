@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading interface</title>
+    <link rel="stylesheet" href="../css/readingInterface.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="main_container container">
+      <div class="main_title">
+        <!-- <div class="book_image">
+          <img id="myImage" src="default.jpg" />
+        </div> -->
+        <div class="book_description">
+          <div id="name"></div>
+          <div id="author"></div>
+        </div>
+      </div>
+    </div>
+    <p class="close" onclick="closePage()">
+      <i class="fa-solid fa-xmark"></i>
+    </p>
+    <!-- ///test -->
+    <div class="main_reader container">
+      <div id="pages-container" class="bookpages"></div>
+      <div class="pagination">
+        <button id="prev-button" disabled>
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <span id="page-info"></span>
+        <button id="next-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- ///test -->
+
+    <script src="../js/readingInterface.js"></script>
+  </body>
+</html>

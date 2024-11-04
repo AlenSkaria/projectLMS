@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: collapse !important;
+  margin: 0 0 2rem 0;
+}
+table,
+th,
+td {
+  border: 1px solid black !important;
+  text-align: center;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.display_userlist {
+  margin-top: 10rem !important;
+}

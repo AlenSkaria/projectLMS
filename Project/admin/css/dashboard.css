@@ -4,7 +4,9 @@
 .dashboard_overview {
   margin-top: 3rem !important;
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .dashboard_overview i {
   font-size: 2rem;
@@ -13,15 +15,6 @@
   color: #fff;
   padding: 1rem;
   border-radius: 14px;
-}
-.count_of_users,
-.count_of_admins {
-  border: 1px solid #11111133;
-  border-radius: 12px;
-  width: 20rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 #hiadmin {
@@ -34,8 +27,19 @@
   color: #111;
 }
 
+.count_of_users,
+.count_of_admins,
+.count_of_books {
+  border: 1px solid #11111133;
+  border-radius: 12px;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
 #adminCounts,
-#userCounts {
+#userCounts,
+#bookCounts {
   font-size: 2rem;
   font-weight: 600;
 }

@@ -49,14 +49,44 @@ function openPaymentPage(plan) {
   localStorage.setItem("membershipSelected", JSON.stringify(plan));
 }
 
+// seperated
 let userLoggedIn = null;
-document.addEventListener("DOMContentLoaded", () => {
+function getLocalData() {
   userLoggedIn = localStorage.getItem("LoggedinUser");
   userLoggedIn = JSON.parse(userLoggedIn);
   console.log(userLoggedIn);
+}
+function checkMembershipValid() {
+  if (userLoggedIn.membership.isActive) {
+    // calculating remainingDays
+    const startDate = new Date(userLoggedIn.membership.startDate);
+    const endDate = new Date(userLoggedIn.membership.endDate);
+    const today = new Date();
+    const timeDifference = endDate - today; // in milliseconds
+    const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); // convert to days
+
+    console.log(true);
+    document.querySelector(".membership_cards").classList.add("hide");
+    document.querySelector(".membership_purchased").classList.remove("hide");
+
+    let purchased_membership = document.getElementById("purchased_membership");
+    purchased_membership.innerHTML = `Your ${userLoggedIn.membership.plan} membership is active till ${userLoggedIn.membership.endDate}. (${remainingDays} days remaining)`;
+  } else {
+    document.querySelector(".membership_cards").classList.remove("hide");
+    purchased_membership.innerHTML = `Your ${userLoggedIn.membership.plan} membership has expired on ${userLoggedIn.membership.endDate}.`;
+  }
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // userLoggedIn = localStorage.getItem("LoggedinUser");
+  // userLoggedIn = JSON.parse(userLoggedIn);
+  // console.log(userLoggedIn);
+  getLocalData();
   if (userLoggedIn) {
     document.querySelector(".membership_not_login").classList.add("hide");
     document.querySelector(".membership_cards").classList.remove("hide");
+    checkMembershipValid();
   } else {
     document.querySelector(".membership_cards").classList.add("hide");
     document.querySelector(".membership_not_login").classList.remove("hide");
