@@ -362,11 +362,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "hiadmin"
   ).innerHTML = `<span class="span">Hello,</span> ${parseLoggedinUser.username}!`;
 
-  console.log(loggedinUser);
-  if (!loggedinUser) {
-    window.location.href = "../../user/html/login.html";
-  }
-
   // update users list if available in json localstorage
   let usersLists = localStorage.getItem("usersLists");
   usersLists = JSON.parse(usersLists);
@@ -410,4 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
   adminCounts.innerHTML = adminUsers.length;
   let bookCounts = document.getElementById("bookCounts");
   bookCounts.innerHTML = Bookslists.length;
+  if (!loggedinUser) {
+    window.location.href = "../../user/html/login.html";
+  }
 });

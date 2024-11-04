@@ -11,7 +11,7 @@
 .selectedBookDetails {
   width: 40%;
 }
-img {
+.selectedBookMainDetails img {
   width: 15rem;
   height: 19rem;
   object-fit: cover;

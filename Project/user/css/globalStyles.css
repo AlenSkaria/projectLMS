@@ -12,8 +12,12 @@ body {
 .logo p {
   margin: 0;
 }
+.logo img {
+  width: 5rem;
+  width: 4rem;
+}
 .nav {
-  padding: 1.5rem 0;
+  padding: 0.4rem 0 !important;
   /* background-color: #fff; */
   position: -webkit-sticky;
   position: fixed;
