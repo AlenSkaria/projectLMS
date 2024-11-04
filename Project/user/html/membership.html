@@ -3,27 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership</title>
+    <link rel="stylesheet" href="../css/globalStyles.css" />
+    <link rel="stylesheet" href="../css/membership.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/globalStyles.css" />
-    <link rel="stylesheet" href="../css/landingPage.css" />
-    <title>LMS</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="nav">
+    <!-- //navigation section -->
+    <div class="nav" style="background-color: #fff">
       <div class="nav_internal container">
         <div class="logo">
           <p>😎</p>
         </div>
         <div class="navlinks">
-          <a href="#" id="btnhome">Home.</a>
+          <a href="../html/landingPage.html" id="btnhome">Home.</a>
           <a href="#" id="btnauthors">Authors.</a>
-          <a href="#" id="btnmembership" onclick="goToMembership()"
-            >Membership.</a
-          >
+          <a href="#" id="btnmembership">Membership.</a>
           <a href="#" id="btnlogin" style="color: #e11b23" onclick="goToLogin()"
             >login.</a
           >
@@ -37,23 +36,28 @@
         </div>
       </div>
     </div>
-    <div class="landing_container">
-      <div class="landing_sale">
-        <div class="container">
-          <div class="content">
-            <h1>MEMBERSHIP SALE IS LIVE NOW!</h1>
-            <h3>Unlock premium benefits and join the community.</h3>
-            <button class="custom_land">Explore More.</button>
-          </div>
+    <!-- //navigation section -->
+    <!-- landing section might be common for some of the pages  -->
+    <div class="photo_container_common">
+      <div class="container_main_content">
+        <div class="content">
+          <h1>MEMBERSHIP SALE IS LIVE NOW!</h1>
+          <h3>Unlock premium benefits and join the community.</h3>
         </div>
       </div>
     </div>
-    <div class="main">
-      <div class="bod">
-        <p class="custom_title_global">books of the day.</p>
+    <!-- landing section might be common for some of the pages  -->
+    <p class="custom_title_global">Memberships.</p>
+    <div class="container">
+      <div class="membership_not_login hide">
+        <p onclick="goToLogin()">Please Login to View the Membership Plans😊</p>
       </div>
-      <div class="cards container">
-        <!-- //dynamic data using js -->
+
+      <div class="membership_cards" id="membership_cards">
+        <!-- dynamic -->
+        <!-- <div class="membership_card"></div>
+        <div class="membership_card"></div>
+        <div class="membership_card"></div> -->
       </div>
     </div>
 
@@ -71,6 +75,9 @@
         </div>
       </div>
     </footer>
-    <script src="../js/landingPage.js"></script>
+    <!-- scripts -->
+    <script src="../js/memberships.js"></script>
+    <script src="../js/globalScript.js"></script>
+    <!-- scripts -->
   </body>
 </html>

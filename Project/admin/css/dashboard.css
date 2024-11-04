@@ -1,0 +1,41 @@
+.main_dashboard {
+  margin-top: 5rem;
+}
+.dashboard_overview {
+  margin-top: 3rem !important;
+  display: flex;
+  gap: 2rem;
+}
+.dashboard_overview i {
+  font-size: 2rem;
+  background-color: #e11b23;
+  height: fit-content;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 14px;
+}
+.count_of_users,
+.count_of_admins {
+  border: 1px solid #11111133;
+  border-radius: 12px;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#hiadmin {
+  margin-top: 6rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #e11b23;
+}
+.span {
+  color: #111;
+}
+
+#adminCounts,
+#userCounts {
+  font-size: 2rem;
+  font-weight: 600;
+}

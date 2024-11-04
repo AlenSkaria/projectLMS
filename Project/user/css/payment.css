@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+.main_payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  border: 1px solid #11111128;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-details {
+  display: none;
+  margin-top: 20px;
+}
+input {
+  padding: 0.8rem 1rem;
+  width: 12rem;
+}
+button {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 12rem;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 12px;
+}
+button:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

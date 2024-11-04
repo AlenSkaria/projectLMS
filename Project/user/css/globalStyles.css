@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: poppins;
+  font-family: poppins !important;
 }
 
 /* navcss global */
@@ -47,6 +47,14 @@ body {
   font-weight: 500;
   text-transform: capitalize;
   margin: 1.4rem 0;
+}
+
+.general_warning {
+  color: #e11b23;
+  border: 1px solid #11111118;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  text-align: center;
 }
 
 /* footer */

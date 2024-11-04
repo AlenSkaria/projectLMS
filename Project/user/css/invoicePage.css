@@ -1,0 +1,80 @@
+body {
+  font-family: poppins;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
+  border: 1px solid #e11b2254;
+  text-align: left;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.invoice-section {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.invoice-section:last-child {
+  border-bottom: none;
+}
+.invoice-section h3 {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+.invoice-section p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 0.8rem;
+}
+.membership-info {
+  color: #555;
+}
+
+/* for printing purpose only */
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .container,
+  .container * {
+    visibility: visible;
+  }
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .print-button {
+    display: none;
+  }
+}
+button {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 12rem;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 12px;
+}
+button:hover {
+  color: #fff;
+  background-color: #111;
+}

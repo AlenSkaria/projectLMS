@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="../css/globalStyles.css" />
+    <link rel="stylesheet" href="../css/payment.css" />
+  </head>
+  <body>
+    <div class="main_payment">
+      <div class="container">
+        <h3 id="membershipType">Membership:</h3>
+        <h3 id="membershipAmount">Amount:</h3>
+        <label for="paymentType">Select Payment Method:</label>
+        <select id="paymentType" onchange="showPaymentDetails()">
+          <option value="">Select</option>
+          <option value="card">Card Payment</option>
+          <option value="upi">UPI Payment</option>
+        </select>
+
+        <div id="cardDetails" class="payment-details">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" placeholder="Enter card number" />
+
+          <label for="expiryDate">Expiry Date:</label>
+          <input type="text" id="expiryDate" placeholder="MM/YY" />
+
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" placeholder="CVV" />
+        </div>
+
+        <div id="upiDetails" class="payment-details">
+          <label for="upiId">UPI ID:</label>
+          <input type="text" id="upiId" placeholder="Enter UPI ID" />
+        </div>
+
+        <button onclick="submitPayment()">Submit Payment</button>
+        <p id="message" class="error-message"></p>
+      </div>
+    </div>
+    <script src="../js/payment.js"></script>
+  </body>
+</html>

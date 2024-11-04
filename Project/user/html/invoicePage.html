@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Page</title>
+    <link rel="stylesheet" href="../css/invoicePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Invoice Summary</h2>
+
+      <div class="invoice-section">
+        <h3>User Details</h3>
+        <div id="userDetails">
+          <!-- <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>Phone:</strong> +1234567890</p>
+          <p><strong>Role:</strong> Student</p>
+          <p><strong>Username:</strong> johnDoe</p> -->
+        </div>
+      </div>
+
+
+      <!-- //only for membership if another payment comes in change this one  -->
+      <div class="invoice-section">
+        <h3>Membership Details</h3>
+        <div id="membershipDetails">
+          <!-- <p><strong>Membership Type:</strong> Premium</p>
+          <p><strong>Amount Paid:</strong> $99</p>
+          <p><strong>Payment Method:</strong> Card</p>
+          <p class="membership-info">
+            <strong>Benefits:</strong> Access to exclusive content, personalized
+            recommendations, priority customer support.
+          </p> -->
+        </div>
+      </div>
+
+      <div class="invoice-section">
+        <h3>Transaction Details</h3>
+        <div id="transactionDetails">
+          <!-- <p><strong>Transaction ID:</strong> 1234567890</p>
+          <p><strong>Date of Payment:</strong> November 4, 2024</p>
+          <p><strong>Status:</strong> Successful</p> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="printInvoice()">Print</button>
+      <button onclick="closePage()">Close</button>
+    </div>
+
+    <script src="../js/invoicePage.js"></script>
+  </body>
+</html>

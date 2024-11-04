@@ -7,7 +7,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 15.0,
     rentPrice: 5.0,
-    coverImage: "../../assets/book/1.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1546098072-0bf8532c662c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
     description:
       "A portrait of the Jazz Age in all of its decadence and excess, The Great Gatsby is one of the great American novels.",
     pages: [
@@ -26,7 +27,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 12.0,
     rentPrice: 4.0,
-    coverImage: "../../assets/book/2.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1721332155545-c7a8005a2581?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.",
     pages: [
@@ -45,7 +47,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 14.0,
     rentPrice: 5.0,
-    coverImage: "../../assets/book/3.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1726711340790-ccaa3ae7e0c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A chilling prophecy about the future, 1984 is a dystopian novel set in a totalitarian society ruled by Big Brother.",
     pages: [
@@ -64,7 +67,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 10.0,
     rentPrice: 3.0,
-    coverImage: "../../assets/book/4.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1729974354513-758c8a5d196d?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A romantic novel of manners that depicts the British landed gentry at the end of the 18th century.",
     pages: [
@@ -83,7 +87,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 11.0,
     rentPrice: 4.0,
-    coverImage: "../../assets/book/5.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1679940852180-09a0a4e775c0?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A novel about teenage angst and alienation, it explores complex themes of identity, belonging, and loss.",
     pages: [
@@ -102,7 +107,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 13.0,
     rentPrice: 4.5,
-    coverImage: "../../assets/book/6.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1636307777503-31a94556968c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A fantasy novel about the journey of a hobbit named Bilbo Baggins who embarks on an adventure to help a group of dwarves.",
     pages: [
@@ -121,7 +127,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 600.0,
     rentPrice: 30.0,
-    coverImage: "../../assets/book/7.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1636307777503-31a94556968c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "THE PHENOMENAL INTERNATIONAL BESTSELLER: OVER 1O MILLION COPIES SOLD WORLDWIDE: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
     pages: [
@@ -141,7 +148,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 14.0,
     rentPrice: 5.0,
-    coverImage: "../../assets/book/8.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A thrilling tale of adventure and obsession as Captain Ahab pursues the great white whale, Moby Dick.",
     pages: [
@@ -160,7 +168,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 20.0,
     rentPrice: 7.0,
-    coverImage: "../../assets/book/9.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1575308832230-58922bda52de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "An epic novel that intertwines the lives of several families during the Napoleonic Wars.",
     pages: [
@@ -179,7 +188,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 13.0,
     rentPrice: 4.5,
-    coverImage: "../../assets/book/10.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A dystopian novel that presents a vision of a future where humanity is controlled by technology and conditioning.",
     pages: [
@@ -198,7 +208,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 12.0,
     rentPrice: 4.0,
-    coverImage: "../../assets/book/11.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1573451426305-1244e3b3e4a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A novel that combines romance and gothic elements, telling the story of Jane Eyre's resilience and love.",
     pages: [
@@ -217,7 +228,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 16.0,
     rentPrice: 5.5,
-    coverImage: "../../assets/book/12.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1590608897129-79ef98f1c1c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A psychological drama exploring the moral dilemmas of a young man who commits a crime and struggles with guilt.",
     pages: [
@@ -236,7 +248,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 18.0,
     rentPrice: 6.0,
-    coverImage: "../../assets/book/13.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A profound exploration of faith, doubt, and the human condition, centered around the lives of three brothers.",
     pages: [
@@ -255,7 +268,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 10.0,
     rentPrice: 3.5,
-    coverImage: "../../assets/book/14.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1560439523-a87d546a74e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A gothic tale of vanity, moral corruption, and the pursuit of eternal youth.",
     pages: [
@@ -274,7 +288,8 @@ const booksData = [
     availableFor: ["buy", "rent"],
     price: 11.0,
     rentPrice: 4.0,
-    coverImage: "../../assets/book/15.jpg",
+    coverImage:
+      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "A tale of intense, destructive love between Heathcliff and Catherine Earnshaw, set on the Yorkshire moors.",
     pages: [
@@ -285,75 +300,55 @@ const booksData = [
       "Despite my lackluster high school career, I still believed I could become a great player.. I earned a spot on the baseball team and, although I was at the bottom of the roster as a freshman, I was thrilled. Despite the chaos of my high school years, I had managed to become a college athlete.I wasn’t going to be starting on the baseball team anytime soon, so I focused on getting my life in order. While my peers stayed up late and played video games, I built good sleep habits and went to bed early each night. In the messy world of a college dorm, I made a point to keep my room neat and tidy. These improvements were minor, but they gave me a sense of control over my life. I started to feel confident again. And this growing belief in myself rippled into the classroom as I improved my study habits and managed to earn straight A’s during my first year.A habit is a routine or behavior that is performed regularly—and, in many cases, automatically. As each semester passed, I accumulated small but consistent habits that ultimately led to results that were unimaginable to me when I started. For example, for the first time in my life, I made it a habit to lift weights multiple times per week, and in the years that followed, my six-footfour-inch frame bulked up from a featherweight 170 to a lean 200 pounds.When my sophomore season arrived, I earned a starting role on the pitching staff. By my junior year, I was voted team captain and at the end of the season, I was selected for the all-conference team. But it was not until my senior season that my sleep habits, study habits, and strength-training habits really began to pay off.Six years after I had been hit in the face with a baseball bat, flown to the hospital, and placed into a coma, I was selected as the top male athlete at Denison University and named to the ESPN Academic All-America Team—an honor given to just thirty-three players across the country. By the time I graduated, I was listed in the school record books in eight different categories. That same year, I was awarded the university’s highest academic honor, the President’s Medal.",
     ],
   },
-];
+];  
+function renderBooks() {
+  let booktabledata = document.getElementById("booktabledata");
+  booktabledata.innerHTML = "";
 
-window.addEventListener("scroll", function () {
-  const nav = document.querySelector(".nav");
-  const landingContainer = document.querySelector(".landing_container");
+  booksData.forEach((book, i) => {
+    const newbodyrow = document.createElement("tr");
+    console.log(newbodyrow);
 
-  const scrollTriggerPoint = window.innerHeight * 0.1;
+    newbodyrow.innerHTML = `
+            <td>${book.bookId}</td>
+            <td>${book.title}</td>
+            <td>${book.author}</td>
+            <td>${book.category}</td>
+            <td>${book.price}</td>
+            <td>-</td> 
+    `;
+    booktabledata.appendChild(newbodyrow);
+  });
+}
 
-  if (window.scrollY > scrollTriggerPoint) {
-    nav.classList.add("scrolled");
+let isToggle = false;
+function toggle() {
+  const tog = document.querySelector(".book_form");
+  if (isToggle) {
+    tog.style.display = "none";
+    document.querySelector(".add_book_button").innerHTML = "Add Books";
   } else {
-    nav.classList.remove("scrolled");
+    tog.style.display = "block";
+    document.querySelector(".add_book_button").innerHTML = "Close";
   }
-});
+  isToggle = !isToggle;
+}
 
-function goToLogin() {
-  window.location.href = "login.html";
+function logOutAdmin() {
+  localStorage.removeItem("LoggedinUser");
+  window.location.href = "../../user/html/login.html";
 }
 
 let loggedinUser = null;
+let usersLists = null;
 document.addEventListener("DOMContentLoaded", () => {
+  renderBooks();
   loggedinUser = localStorage.getItem("LoggedinUser");
+
+  let parseLoggedinUser = JSON.parse(loggedinUser);
+
   console.log(loggedinUser);
-  if (loggedinUser) {
-    document.getElementById("btnlogin").classList.add("hide");
-    document.getElementById("btnlogout").classList.remove("hide");
-  } else {
-    document.getElementById("btnlogout").classList.add("hide");
-    document.getElementById("btnlogin").classList.remove("hide");
+  if (!loggedinUser) {
+    window.location.href = "../../user/html/login.html";
   }
 });
-
-const books = JSON.parse(localStorage.getItem("booksData")) || booksData;
-
-function displayBooksoftheDay() {
-  const container = document.querySelector(".cards.container");
-  books.slice(0, 6).forEach((book) => {
-    const bookCard = document.createElement("div");
-    bookCard.classList.add("card", "individual_card");
-
-    bookCard.innerHTML = `
-     <img src="${book.coverImage}" alt="${book.title}" />
-      <div class="book_texts">
-        <p class="book_title">${book.title}</p>
-        <p class="category">${book.category}</p>
-        <p class="available_for">${book.availableFor.join(" | ")}</p>
-      </div>
-    `;
-    bookCard.addEventListener("click", () => {
-      openBookDetails(book);
-    });
-
-    container.appendChild(bookCard);
-  });
-}
-displayBooksoftheDay();
-
-///navigate to book details page with book data so we can display it there in reading interface
-function openBookDetails(book) {
-  window.location.href = "../../user/html/selectedBook.html";
-  localStorage.setItem("selectedBook", JSON.stringify(book));
-}
-
-function goToMembership() {
-  window.location.href = "../../user/html/membership.html";
-}
-
-function logOutUser() {
-  localStorage.removeItem("LoggedinUser");
-  // force reload
-  location.reload();
-}
