@@ -72,3 +72,19 @@ button:hover {
   color: red;
   margin-top: 10px;
 }
+.close {
+  position: fixed;
+  top: 3rem;
+  right: 12rem;
+  font-size: 1.5rem;
+}
+.close i:hover {
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+}
+.close i {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  border-radius: 12px;
+}

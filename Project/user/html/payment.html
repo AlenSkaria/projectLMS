@@ -6,12 +6,25 @@
     <title>Payment Page</title>
     <link rel="stylesheet" href="../css/globalStyles.css" />
     <link rel="stylesheet" href="../css/payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
+    <p class="close" onclick="closePage()">
+      <i class="fa-solid fa-xmark"></i>
+    </p>
     <div class="main_payment">
       <div class="container">
-        <h3 id="membershipType">Membership:</h3>
-        <h3 id="membershipAmount">Amount:</h3>
+        <div class="membershipBooksDet">
+          <h3 id="membershipType">Membership:</h3>
+          <h3 id="membershipAmount">Amount:</h3>
+        </div>
+        <div class="buyBook">
+          <h3 id="BookType">Book:</h3>
+          <h3 id="BookAmount">Amount:</h3>
+        </div>
         <label for="paymentType">Select Payment Method:</label>
         <select id="paymentType" onchange="showPaymentDetails()">
           <option value="">Select</option>

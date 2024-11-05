@@ -10,7 +10,7 @@ function displayBooksoftheDay() {
         <div class="book_texts">
           <p class="book_title">${book.title}</p>
           <p class="category">${book.category}</p>
-          <p class="available_for">${book.availableFor.join(" | ")}</p>
+          
         </div>
       `;
     bookCard.addEventListener("click", () => {
@@ -59,3 +59,45 @@ function logOutUser() {
 function goToMembership() {
   window.location.href = "../../user/html/membership.html";
 }
+function goToLogin() {
+  window.location.href = "../../user/html/login.html";
+}
+
+// test
+function searchBooks() {
+  const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  const container = document.querySelector(".cards.container");
+  container.innerHTML = ""; // Clear current book cards
+
+  const filteredBooks = books.filter((book) => {
+    return (
+      book.title.toLowerCase().includes(searchTerm) ||
+      book.category.toLowerCase().includes(searchTerm)
+    );
+  });
+
+  if (filteredBooks.length > 0) {
+    filteredBooks.forEach((book) => {
+      const bookCard = document.createElement("div");
+      bookCard.classList.add("card", "individual_card");
+
+      bookCard.innerHTML = `
+      <img src="${book.coverImage}" alt="${book.title}" />
+      <div class="book_texts">
+      <p class="book_title">${book.title}</p>
+      <p class="category">${book.category}</p>
+      <p class="available_for">${book.availableFor.join(" | ")}</p>
+      </div>
+      `;
+      bookCard.addEventListener("click", () => {
+        openBookDetails(book);
+      });
+
+      container.appendChild(bookCard);
+    });
+  } else {
+    container.innerHTML = "<p>No books found.</p>"; // Message if no books match
+  }
+}
+
+// test

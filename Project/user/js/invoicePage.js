@@ -57,6 +57,8 @@ function printInvoice() {
 
 function closePage() {
   window.location.href = "../../user/html/landingPage.html";
+  localStorage.removeItem("membershipSelected");
+  localStorage.removeItem("BuyBook");
 }
 let usersList = null;
 function getUsersList() {
@@ -94,10 +96,12 @@ function updateUserWithMembership() {
   }
 }
 
+let buyBook = null;
 document.addEventListener("DOMContentLoaded", () => {
   getLoggedinUser();
   getSelectedMembership();
   setTransaction();
   getUsersList();
   updateUserWithMembership();
+  
 });

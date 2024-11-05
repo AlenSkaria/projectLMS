@@ -44,7 +44,7 @@ body {
 }
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -83,9 +83,20 @@ body {
 .search-container {
   margin-bottom: 20px;
   display: flex;
+  width: 30rem;
+  margin-bottom: 3rem !important;
   gap: 10px; /* Add some spacing between input and button */
 }
 
-.search-container input {
-  flex: 1; /* Make input take available space */
+button {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 12rem;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 12px;
+}
+button:hover {
+  color: #fff;
+  background-color: #111;
 }

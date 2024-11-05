@@ -24,9 +24,10 @@ function updateMemPaypage() {
   console.log(membershipSelected);
   const membershipType = document.getElementById("membershipType");
   const membershipAmount = document.getElementById("membershipAmount");
-
-  membershipType.innerHTML = `Membership: ${membershipSelected.name}`;
-  membershipAmount.innerHTML = `Amount: ${membershipSelected.price}`;
+  if (membershipSelected) {
+    membershipType.innerHTML = `Membership: ${membershipSelected.name}`;
+    membershipAmount.innerHTML = `Amount: ${membershipSelected.price}`;
+  }
 }
 
 function validateCardDetails() {
@@ -82,6 +83,31 @@ function submitPayment() {
   }
 }
 
+let BuyBook = null;
+function getPayData() {
+  BuyBook = localStorage.getItem("BuyBook");
+  BuyBook = JSON.parse(BuyBook);
+  console.log(BuyBook);
+  const BookType = document.getElementById("BookType");
+  const BookAmount = document.getElementById("BookAmount");
+  console.log(buyBook);
+  BookType.innerHTML = `Book: ${buyBook.title}`;
+  BookAmount.innerHTML = `Amount: ${buyBook.price}`;
+}
+// test
+function closePage() {
+  history.back();
+}
 document.addEventListener("DOMContentLoaded", () => {
   updateMemPaypage();
+  buyBook = localStorage.getItem("BuyBook");
+  buyBook = JSON.parse(buyBook);
+  if (buyBook) {
+    getPayData();
+    document.querySelector(".membershipBooksDet").classList.add("hide");
+    document.querySelector(".buyBook").classList.remove("hide");
+  } else {
+    document.querySelector(".membershipBooksDet").classList.remove("hide");
+    document.querySelector(".buyBook").classList.add("hide");
+  }
 });

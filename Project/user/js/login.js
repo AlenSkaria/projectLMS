@@ -121,6 +121,32 @@ function createUser() {
   const signinusername = document.getElementById("signinusername").value;
   const signinpassword = document.getElementById("signinpassword").value;
 
+  // test
+
+  // Email and phone validation patterns
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const phonePattern = /^\+?[1-9]\d{1,14}$/; // Allows international format
+
+  // Check if email and phone match the patterns
+  if (!emailPattern.test(email)) {
+    displayWarning("Please enter a valid email address.");
+    return;
+  }
+  if (!phonePattern.test(phone)) {
+    displayWarning("Please enter a valid phone number.");
+    return;
+  }
+  // test
+  function displayWarning(message) {
+    const warn = document.querySelector(".warning");
+    warn.style.display = "block";
+    warn.innerHTML = message;
+
+    setTimeout(() => {
+      warn.style.display = "none";
+    }, 3000);
+  }
+
   // creating the new user object
   const newUserObj = {
     userId: Date.now(),

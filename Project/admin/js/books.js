@@ -63,7 +63,7 @@ function addBookData() {
     availableFor: availableFor,
     price: bookPrice,
     rentPrice: rentPrice,
-    coverImage: "../../assets/book/15.jpg",
+    coverImage: "../../assets/book/5.jpg",
     description:
       "A tale of intense, destructive love between Heathcliff and Catherine Earnshaw, set on the Yorkshire moors.",
     pages: [

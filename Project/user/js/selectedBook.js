@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   displayBooksoftheDay();
   loggedinUser = localStorage.getItem("LoggedinUser");
   console.log(loggedinUser);
+  showHide();
+
   if (loggedinUser) {
     document.getElementById("btnlogin").classList.add("hide");
     document.getElementById("btnlogout").classList.remove("hide");
@@ -31,14 +33,20 @@ LoggedinUser = JSON.parse(LoggedinUser);
 console.log(LoggedinUser);
 
 // show/ hide buttons for buying renting or reading books
-let selectedBookOptions = document.querySelector(".selectedBookOptions");
-let loggedOutUserMsg = document.querySelector(".loggedOutUserMsg");
-if (LoggedinUser) {
-  selectedBookOptions.classList.remove("hide");
-  loggedOutUserMsg.classList.add("hide");
-} else {
-  selectedBookOptions.classList.add("hide");
-  loggedOutUserMsg.classList.remove("hide");
+function showHide() {
+  let selectedBookOptions = document.querySelector(".selectedBookOptions");
+  let loggedOutUserMsg = document.querySelector(".loggedOutUserMsg");
+  let membershipUserMsg = document.querySelector(".membershipUserMsg");
+  if (LoggedinUser) {
+    checkMembershipValid();
+    console.log(loggedinUser);
+    // selectedBookOptions.classList.remove("hide");
+    loggedOutUserMsg.classList.add("hide");
+  } else {
+    selectedBookOptions.classList.add("hide");
+    loggedOutUserMsg.classList.remove("hide");
+    membershipUserMsg.classList.add("hide");
+  }
 }
 
 // displaying book details dynamically from localstorage
@@ -94,3 +102,38 @@ function goToRead() {
 }
 
 // common for pages
+
+// test
+let userLoggedIn = null;
+function getLocalData() {
+  userLoggedIn = localStorage.getItem("LoggedinUser");
+  userLoggedIn = JSON.parse(userLoggedIn);
+  console.log(userLoggedIn);
+}
+function checkMembershipValid() {
+  getLocalData();
+  let selectedBookOptions = document.querySelector(".selectedBookOptions");
+  let membershipUserMsg = document.querySelector(".membershipUserMsg");
+  if (userLoggedIn.membership.isActive) {
+    // calculating remainingDays
+    const startDate = new Date(userLoggedIn.membership.startDate);
+    const endDate = new Date(userLoggedIn.membership.endDate);
+    const today = new Date();
+    const timeDifference = endDate - today; // in milliseconds
+    const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); // convert to days
+
+    selectedBookOptions.classList.remove("hide");
+    let membershipUserMsg = document.querySelector(".membershipUserMsg");
+    membershipUserMsg.classList.add("hide");
+  } else {
+    selectedBookOptions.classList.add("hide");
+    membershipUserMsg.classList.remove("hide");
+  }
+}
+
+// test
+
+function goToPayment() {
+  window.location.href = "../../user/html/payment.html";
+  localStorage.setItem("BuyBook", JSON.stringify(selectedBook));
+}

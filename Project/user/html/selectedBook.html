@@ -23,7 +23,7 @@
         <div class="navlinks">
           <a href="../html/landingPage.html" id="btnhome">Home.</a>
           <a href="./booksList.html" id="btnauthors">Browse.</a>
-          <a href="#" id="btnmembership">Membership.</a>
+          <a href="./membership.html" id="btnmembership">Membership.</a>
           <a href="#" id="btnlogin" style="color: #e11b23" onclick="goToLogin()"
             >login.</a
           >
@@ -48,13 +48,18 @@
           <p id="selectedBookDescription"></p>
           <p id="selectedBookAuthor"></p>
           <p id="selectedBookCategory"></p>
-          <div class="selectedBookOptions">
+          <div class="selectedBookOptions hide">
             <button onclick="goToRead()">Read</button>
-            <button>Rent</button>
-            <button>Buy</button>
+            <!-- <button>Rent</button> -->
+            <button onclick="goToPayment()">Buy</button>
           </div>
           <div class="loggedOutUserMsg">
             <p class="general_warning">Oops! You have to login to get access</p>
+          </div>
+          <div class="membershipUserMsg">
+            <p class="general_warning">
+              Oops! You should have an active membership
+            </p>
           </div>
         </div>
       </div>
