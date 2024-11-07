@@ -2,15 +2,14 @@ let usersAuthData = {
   users: [
     {
       userId: 1,
-      username: "johnDoe",
+      username: "midhun",
       password: "123",
       role: "student",
       profile: {
-        firstName: "John",
-        lastName: "Doe",
-        email: "john.doe@example.com",
+        firstName: "midhun",
+        lastName: "thomas",
+        email: "midhun@example.com",
         phoneNumber: "+1234567890",
-        preferredCategories: ["Fiction", "Mystery"],
       },
       membership: {
         plan: "Gold",
@@ -21,15 +20,14 @@ let usersAuthData = {
     },
     {
       userId: 2,
-      username: "janeSmith",
+      username: "alonn",
       password: "11",
       role: "student",
       profile: {
-        firstName: "Jane",
-        lastName: "Smith",
-        email: "jane.smith@example.com",
+        firstName: "alonn",
+        lastName: "grey",
+        email: "alonn@example.com",
         phoneNumber: "+1234567891",
-        preferredCategories: ["Romance", "Science Fiction"],
       },
       membership: {
         plan: "Platinum",

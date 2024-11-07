@@ -16,17 +16,18 @@ let membershipSelected = null;
 function getSelectedMembership() {
   membershipSelected = localStorage.getItem("membershipSelected");
   membershipSelected = JSON.parse(membershipSelected);
-
-  let membershipDetails = document.getElementById("membershipDetails");
-  membershipDetails.innerHTML = `
-     <p><strong>Membership Type:</strong> ${membershipSelected.name}</p>
-          <p><strong>Amount Paid:</strong> ${membershipSelected.price}</p>
-          <p class="membership-info">
-            <strong>Benefits:</strong> Access to ${membershipSelected.accessibleGenres.join(
-              " , "
-            )}
-          </p>
-    `;
+  if (membershipSelected) {
+    let membershipDetails = document.getElementById("membershipDetails");
+    membershipDetails.innerHTML = `
+  <p><strong>Membership Type:</strong> ${membershipSelected.name}</p>
+  <p><strong>Amount Paid:</strong> ${membershipSelected.price}</p>
+  <p class="membership-info">
+  <strong>Benefits:</strong> Access to ${membershipSelected.accessibleGenres.join(
+    " , "
+  )}
+  </p>
+  `;
+  }
 }
 
 function setTransaction() {
@@ -69,17 +70,19 @@ function getUsersList() {
 function updateUserWithMembership() {
   console.log(loggedinUser);
   console.log(membershipSelected);
-  loggedinUser.membership.isActive = true;
-  loggedinUser.membership.plan = membershipSelected.membershipId;
-  loggedinUser.membership.startDate = getCurrentDate();
-  loggedinUser.membership.endDate = new Date();
-  loggedinUser.membership.endDate.setMonth(
-    loggedinUser.membership.endDate.getMonth() + 1
-  ); // Set end date to one month later
-  loggedinUser.membership.endDate =
-    loggedinUser.membership.endDate.toLocaleDateString("en-US", options);
-  console.log(loggedinUser);
-  localStorage.setItem("LoggedinUser", JSON.stringify(loggedinUser));
+  if (membershipSelected) {
+    loggedinUser.membership.isActive = true;
+    loggedinUser.membership.plan = membershipSelected.membershipId;
+    loggedinUser.membership.startDate = getCurrentDate();
+    loggedinUser.membership.endDate = new Date();
+    loggedinUser.membership.endDate.setMonth(
+      loggedinUser.membership.endDate.getMonth() + 1
+    ); // Set end date to one month later
+    loggedinUser.membership.endDate =
+      loggedinUser.membership.endDate.toLocaleDateString("en-US", options);
+    console.log(loggedinUser);
+    localStorage.setItem("LoggedinUser", JSON.stringify(loggedinUser));
+  }
   // Update the main user list
   if (usersList) {
     console.log(usersList);
@@ -103,5 +106,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setTransaction();
   getUsersList();
   updateUserWithMembership();
-  
 });
