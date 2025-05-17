@@ -187,3 +187,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "../../user/html/login.html";
   }
 });
+
+
+
